@@ -1,17 +1,36 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>Example HTML page</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css\font-awesome.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/hover.css">
+<link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/defaulttheme.css">
 </head>
 <body>
+  <!-- Start Option box -->
+  <section class="optionbox">
+    <div class="coloroption">
+      <h4>Color Option</h4>
+      <ul class="list-unstyled">
+        <li data-value="css/defaulttheme2.css"></li>
+        <li data-value="css/defaulttheme.css"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <i class="fa fa-gear fa-3x gearcheck"></i>
+  </section>
+  <!-- End option box -->
   <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
+    <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -20,18 +39,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">MR Company</a>
+        <a class="navbar-brand skew" href="#">MR Company</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right" >
-          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+         <ul class="nav navbar-nav navbar-right" >
+          <li class="active overline-from-left" ><a href="#">Home <span class="sr-only">(current)</span></a></li>
           <li><a href="#">Fetures</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Portfolio</a></li>
-
-
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -45,7 +62,6 @@
             </ul>
           </li>
         </ul>
-
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
@@ -93,34 +109,34 @@
 </div>
   <!-- End Carc -->
   <!--Start About -->
-    <din class="about text-center">
+    <div class="about text-center">
       <div class="container">
         <h3>Meet our New Templates <span><strong>Mahmoud Reyad</strong><span> .inc</h3>
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-    </din>
+    </div>
   <!--End About -->
   <!-- Start Our Features -->
     <div class="features text-center">
       <div class="container">
         <div class="row">
           <h3 class="col-lg-12">Our features</h3>
-          <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="col-lg-3 col-md-3 col-sm-6 wow bounceInLeft" data-wow-offset="100" data-wow-duration="2s">
             <h2>Features 1</h2>
             <p>nim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
             <button class="btn btn-primary">see More</button>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="col-lg-3 col-md-3 col-sm-6 wow  bounceInRight" data-wow-offset="100" data-wow-duration="2s">
             <h2>Features 1</h2>
             <p>nim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
             <button class="btn btn-primary">see More</button>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="col-lg-3 col-md-3 col-sm-6 wow bounceInUp" data-wow-offset="100" data-wow-duration="2s">
             <h2>Features 1</h2>
             <p>nim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
             <button class="btn btn-primary">see More</button>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="col-lg-3 col-md-3 col-sm-6 wow bounceInDown" data-wow-offset="100" data-wow-duration="2s">
             <h2>Features 1</h2>
             <p>nim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
             <button class="btn btn-primary">see More</button>
@@ -131,7 +147,7 @@
     </div>
   <!-- End Our Features  -->
   <!-- Start Testimonials -->
-  <div class="testimonials text-center">
+  <div class="testimonials text-center" >
     <h1>What Our Clients say</h1>
     <div class="container">
     <!-- Start Testimonials Carousel -->
@@ -226,23 +242,23 @@
   </div>
   <!-- End Price Table -->
   <!-- Start Our team -->
-  <div class="ourteam text-center">
+  <div class="ourteam text-center wow bounce " data-wow-duration="5s" data-wow-delay="0s">
     <h1>Meet Our Awesome Team</h1>
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-3 wow fadeInUp" data-wow-duration="2s">
           <img src="images/team1.jpg" alt=""  class="img-circle">
           <h4>Mr Smith</h4>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 wow fadeInUp" data-wow-duration="2s">
           <img src="images/team1.jpg" alt=""  class="img-circle">
           <h4>Mr Smith</h4>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 wow fadeInUp" data-wow-duration="2s">
           <img src="images/team1.jpg" alt="" class="img-circle">
           <h4>Mr Smith</h4>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s" >
           <img src="images/team1.jpg" alt=""  class="img-circle">
           <h4>Mr Smith</h4>
         </div>
@@ -460,20 +476,33 @@
       </div>
       <div class="col-lg-4">
         <h3>Our Awesome Work</h3>
-        <img src="images/simple.jpg" height="300"   class="img-work col-lg-6 img-responsive"alt="">
-        <img src="images/simple.jpg" height="300"  class="img-work col-lg-6 img-responsive" alt="">
-        <img src="images/simple.jpg" height="300" class=" img-work col-lg-6 img-responsive" alt="">
-        <img src="images/simple.jpg" height="300"  class="img-work col-lg-6 img-responsive" alt="">
+        <img src="images/simple.jpg" height="110"   class="img-work col-lg-6"alt="">
+        <img src="images/simple.jpg" height="110"  class="img-work col-lg-6 " alt="">
+        <img src="images/simple.jpg" height="110" class=" img-work col-lg-6 " alt="">
+        <img src="images/simple.jpg" height="110"  class="img-work col-lg-6 " alt="">
       </div>
     </div>
   </div>
 
   <!-- End Footer   -->
+  <!--Start Loading  -->
+  <!-- <section class="loading-overlay">
+    <div class="spinner">
+      <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+      <span class="sr-only">Loading...</span>
+    </div>
+  </section> -->
+  <!-- End Loading -->
+  <!--Start Scroll Top  -->
+  <i class="fa fa-chevron-up fa-2x" id="scroll-top"></i>
+  <!-- End Scroll Top -->
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/Chart.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
 
